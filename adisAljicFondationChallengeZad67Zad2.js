@@ -57,7 +57,7 @@ const calculateDaysBetweenDates = (string1, string2) => {
     else return "Unesite datum u formatu DD.MM.YYYY."
 
 }
-console.log(calculateDaysBetweenDates("22.07.2022.", "30.12.2023."))
+console.log(calculateDaysBetweenDates("22.07.2022.", "30.12.2022."))
 // console.log(FindLeapYear(2020))
 // "19.09.2022.", "17.05.2023."
 // "22.07.2022.", "30.12.2022."
