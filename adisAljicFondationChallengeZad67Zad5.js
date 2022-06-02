@@ -5,7 +5,6 @@ countLoneOnes(101) ➞ 2
 countLoneOnes(1191) ➞ 1
 countLoneOnes(1111) ➞ 0 */
 
-//---
 
 const decomposeNumber = (number) => {
     const digits = [];

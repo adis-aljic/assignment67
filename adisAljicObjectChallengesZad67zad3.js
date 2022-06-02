@@ -3,12 +3,10 @@
 dva pravougaonika, svaki sa koordinatama dva svoja suprotna ugla.
 PRIMJER 1:
 overlappingRectangles(
-    l                   r
 [{ x: 2, y: 1 }, { x: 5, y: 5 }],
 [{ x: 3, y: 2 }, { x: 5, y: 7 }]
 ) ➞ 6 */
-// min r0  - max l0  2
-// r1 - l1 
+
 
 const firstRectangle = [{ x: 2, y: 1 }, { x: 5, y: 5 }]
 const secondRectangle = [{ x: 3, y: 2 }, { x: 5, y: 7 }]
