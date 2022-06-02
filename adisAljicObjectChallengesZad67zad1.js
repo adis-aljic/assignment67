@@ -19,11 +19,11 @@ const kreirajFudbalskiTim = (ime, brojPobjeda, brojPoraza, brojNerjesenih, brojP
         brojBodova: 0
     }
 }
-const tim1 = kreirajFudbalskiTim("prvi Tim", 5, 2, 1, 10, 5)
-const tim2 = kreirajFudbalskiTim("drugi Tim", 2, 5, 1, 5, 10)
-const tim3 = kreirajFudbalskiTim("treci Tim", 3, 2, 1, 11, 4)
-const tim4 = kreirajFudbalskiTim("cetvrti Tim", 5, 2, 1, 11, 4)
-const tim5 = kreirajFudbalskiTim("peti Tim", 2, 2, 1, 11, 4)
+const tim1 = kreirajFudbalskiTim("prvi Tim", 5, 3, 2, 10, 5)
+const tim2 = kreirajFudbalskiTim("drugi Tim", 2, 5, 3, 5, 10)
+const tim3 = kreirajFudbalskiTim("treci Tim", 2, 2, 6, 11, 4)
+const tim4 = kreirajFudbalskiTim("cetvrti Tim", 7, 2, 1, 16, 4)
+const tim5 = kreirajFudbalskiTim("peti Tim", 3, 4, 3, 11, 4)
 const timovi = [];
 timovi.push(tim1, tim2, tim3, tim4, tim5)
 const pronadjiGolRazlikuIBodove = (array) => {
