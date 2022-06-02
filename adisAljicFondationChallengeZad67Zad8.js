@@ -17,7 +17,7 @@ const findString = (string) => {
 
         for (let i = 0; i < word.length; i++) {
             if (word[i] == "#") {
-                if (i < 1) word.splice(i, 1)
+                if (i == 0) word.splice(i, 1)
                 else {
                     word.splice(i, 1)
                     word.splice(i - 1, 1)
