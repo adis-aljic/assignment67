@@ -3,7 +3,7 @@ Pretpostaviti da # predstavlja tipku BACKSPACE koja se pritisne. Napišite funkc
 koja pretvara string koji sadrži # u string bez #.
 PRIMJERI:
 erase("he##l#hel#llo") ➞ "hello"
-erase("major# spar##ks") ➞ "majo spks"
+erase("major# spar##kss") ➞ "majo spks"
 erase("si###t boy") ➞ "t boy"
 erase("####") ➞ "" */
 ///---
@@ -13,16 +13,18 @@ let word = [];
     for (let i = 0; i < string.length; i++) {
         word.push(string[i])   
     }
-    for (let i = 0; i < word.length; i++) {
+    while(word.includes("#")) {
         
-        if (word[i] == ("#")) 
-        // if (word.includes("#")) 
-        {
-            let A = word.splice(word.indexOf("#")-1,1,"")
-            let b = word.splice(word.indexOf("#"),1,"")
-            
+        for (let i = 0; i < word.length; i++) {
+            if (word[i] == "#") 
+            {
+                word.splice(i,1)
+                word.splice(i-1,1)
+                break;           
+            }
+            else continue
         }
     }
-    return word
+    return word.join("")
 }
-console.log(findString("he##l#hel#llo"))
+console.log(findString("si###t boy"))
