@@ -5,20 +5,34 @@ countLoneOnes(101) ➞ 2
 countLoneOnes(1191) ➞ 1
 countLoneOnes(1111) ➞ 0 */
 
-const countLoneOnes = (number) => {
+//---
 
-    let nbr = "" + number
-    let cnt = 0
-    for (let i = 0; i < nbr.length-1; i++) {
-        if (nbr[i] != 1) {
-                if(nbr[i+1] == 1) cnt++
-
-
-
-        }
-        else continue
+const decomposeNumber = (number) => {
+    const digits = [];
+    while (number > 0) {
+        digits.push(number % 10);
+        number = Math.trunc(number / 10);
     }
-    return cnt
-
+    return digits.reverse();
 }
-console.log(countLoneOnes(1001))
+
+const countLoneOnes = (number) => {
+    const nbr = decomposeNumber(number)
+    let cnt = 0
+  
+     for (let i = 0; i < nbr.length; i++) {
+         const element = nbr[i];
+         
+            if(element == 1) {
+
+                    if(nbr[i-1] != 1 && nbr[i+1] !=1) cnt++
+
+            }
+
+
+
+     }
+     return cnt
+    }
+  
+console.log(countLoneOnes(101))

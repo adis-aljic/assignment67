@@ -20,16 +20,17 @@ const decomposeNumber = (number) => {
 
 const isPandigital = (number1) => {
 
+
     const controlDigits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    let cnt = 0;
     const number = decomposeNumber(number1)
-        let cnt = 0;
         for (let i = 0; i < controlDigits.length; i++) {
             const controlDigit = controlDigits[i];
-            console.log(controlDigit)
             if (number.includes(controlDigit)) ++cnt
         }
         if (cnt == controlDigits.length) return true
         else return false
    
 }
-console.log(isPandigital(112233440567899))
+console.log(isPandigital(1234567890))

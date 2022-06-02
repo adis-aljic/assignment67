@@ -7,6 +7,7 @@ happinessNumber(":):(") ➞ -1
 happinessNumber("(:)") ➞ 2
 happinessNumber("::::") ➞ 0 */
 
+
 const happinessNumber = (string) => {
     let cnt = 0;
     for (let i = 0; i < string.length - 1; i++) {
@@ -18,4 +19,4 @@ const happinessNumber = (string) => {
     return cnt
 }
 
-console.log(happinessNumber("::::"))
+console.log(happinessNumber("::()::"))

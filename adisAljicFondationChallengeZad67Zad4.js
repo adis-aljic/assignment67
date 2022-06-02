@@ -35,4 +35,4 @@ if (factors.includes(nbr)) return true
 else return false
         
 }
-console.log(isFactorial(126))
+console.log(isFactorial(120))
